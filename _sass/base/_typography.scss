@@ -20,6 +20,8 @@
         main & {
           @if $i == 2 {
             margin: 2.5rem 0 1.25rem;
+            display: flex;
+            align-items: center;
           } @else {
             margin: 2rem 0 1rem;
           }
@@ -156,6 +158,16 @@ main {
     @include bp.lg {
       margin-top: 3rem;
     }
+  }
+
+  h2::before {
+    display: inline-block;
+    content: "";
+    width: 6px;
+    height: 20px;
+    background-color: #43C6AC;
+    border-radius: 10px;
+    margin-right: 16px;
   }
 
   p {
