@@ -8,6 +8,10 @@ theme: jekyll-theme-chirpy
 # otherwise, the layout language will use the default value of 'en'.
 lang: ko
 
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
 timezone: Asia/Seoul
 
@@ -223,3 +227,5 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+    permalink: /:categories/:title/
+
